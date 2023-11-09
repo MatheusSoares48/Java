@@ -1,4 +1,4 @@
-package Aula_02;
+package aula_02;
 
 import java.util.Scanner;
 
@@ -19,6 +19,7 @@ public class Exercicio_2 {
 		
 		media = (nota1+nota2+nota3+nota4)/4;
 		System.out.printf("Media é igual á %.1f",media);
+		
 	}
 
 }

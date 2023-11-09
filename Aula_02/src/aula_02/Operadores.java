@@ -1,4 +1,4 @@
-package Aula_02;
+package aula_02;
 
 	import java.util.Scanner;
 	
@@ -19,6 +19,11 @@ public class Operadores {
 		System.out.println("A Soma dos 2 numeros é "+(n1*n2));
 		System.out.println("A Soma dos 2 numeros é "+(n1/n2));
 		
+		if (n1 != 0 || n2 != 0) {
+			System.out.println("O modulo do numero 1 é (Resto da divisão)"+(n1%2));
+		}else {
+			System.out.println("Divisão por zero não rola amigão.");
+		}
 		System.out.println("A Raiz quadrada do 1 numero é "+(Math.sqrt(n1)));
 		System.out.println("A Raiz quadrada do 1 numero é "+(Math.pow(n1,n2)));
 
