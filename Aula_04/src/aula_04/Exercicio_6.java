@@ -14,7 +14,7 @@ public class Exercicio_6 {
 				System.out.print("\nDigite um numero: ");
 				n1=leia.nextInt();
 				
-				if(n1 % 3 == 0) {
+				if(n1 % 3 == 0 && n1 != 0) {
 					soma=n1+soma;
 					cont++;
 				}
