@@ -21,7 +21,7 @@ public class Exercicio_6 {
 			}while(n1!=0);
 			
 			media=soma/cont;
-			System.out.println("A soma dos numeros positivos é: "+media);
+			System.out.println("A média de todos os numeros multiplos de 3 é: "+media);
 
 	}
 
