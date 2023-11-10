@@ -37,6 +37,8 @@ public class Exercicio_7_Switch {
 				soma=n1/n2;
 				System.out.printf("%.1f / %.1f = %.1f",n1,n2,soma);
 				break;
+			default:
+				System.out.print("Operação Invalida! ");
 		}
 	}
 

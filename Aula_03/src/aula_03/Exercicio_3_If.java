@@ -27,11 +27,11 @@ public class Exercicio_3_If {
 	    	resp = false;
 		}
 		
-			if(idade >= 18 && idade <=60 || idade > 60 && idade <= 69 && resp == true) {
-				System.out.printf("%s está apto(a) para doar sangue! ",nome);
+			if(idade >= 18 && idade <=60 || idade > 60 && idade <= 69 && resp == false) {
+				System.out.printf("\n%s está apto(a) para doar sangue! ",nome);
 		}
 			else
-				System.out.printf("%s não está apto(a) para doar sangue. ",nome);
+				System.out.printf("\n%s não está apto(a) para doar sangue. ",nome);
 	
 
 	}
