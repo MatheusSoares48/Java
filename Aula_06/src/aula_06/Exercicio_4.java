@@ -32,11 +32,10 @@ public class Exercicio_4 {
 		System.out.println("\nDigite um numero: ");
 		var = leia.nextInt();
 		
-		Iterator<Integer> iNumeros = numeros.iterator();
-		
-		while(iNumeros.hasNext())
-			System.out.printf("O Numero %d foi encontrado",var);
-			
+		if(numeros.contains(var) == true)
+			System.out.println("Seu elemento foi encontrado! E está na posição: " + numeros.indexOf(var));
+		else
+			System.out.printf("O elemento %d não foi encontrado! ",var);
 	}
 
 }
