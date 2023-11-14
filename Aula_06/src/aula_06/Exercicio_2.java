@@ -28,7 +28,7 @@ public class Exercicio_2 {
 		System.out.println("\nDigite um numero: ");
 		var = leia.nextInt();
 		
-		if(numeros.contains(var) == true)
+		if(numeros.contains(var))
 			System.out.println("Seu elemento foi encontrado! E está na posição: "+numeros.indexOf(var));
 		else
 			System.out.printf("O elemento %d não foi encontrado! ",var);

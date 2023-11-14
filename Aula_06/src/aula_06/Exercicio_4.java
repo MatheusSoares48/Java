@@ -29,7 +29,7 @@ public class Exercicio_4 {
 		System.out.println("\nDigite um numero: ");
 		var = leia.nextInt();
 		
-		if(numeros.contains(var) == true)
+		if(numeros.contains(var))
 			System.out.printf("O elemento %d foi encontrado! ",var);
 		else
 			System.out.printf("O elemento %d não foi encontrado! ",var);
