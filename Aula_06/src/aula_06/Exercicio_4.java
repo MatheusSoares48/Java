@@ -1,8 +1,6 @@
 package aula_06;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -26,14 +24,13 @@ public class Exercicio_4 {
 		numeros.add(10);
 		numeros.add(6);
 		
-		
-		ArrayList<Integer> number = new ArrayList<Integer>(numeros);
+		System.out.println(numeros);
 		
 		System.out.println("\nDigite um numero: ");
 		var = leia.nextInt();
 		
 		if(numeros.contains(var) == true)
-			System.out.println("Seu elemento foi encontrado! E está na posição: " + numeros.indexOf(var));
+			System.out.printf("O elemento %d foi encontrado! ",var);
 		else
 			System.out.printf("O elemento %d não foi encontrado! ",var);
 	}

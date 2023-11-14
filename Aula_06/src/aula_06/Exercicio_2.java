@@ -29,7 +29,7 @@ public class Exercicio_2 {
 		var = leia.nextInt();
 		
 		if(numeros.contains(var) == true)
-			System.out.println("Seu elemento foi encontrado! E está na posição: "+(var));
+			System.out.println("Seu elemento foi encontrado! E está na posição: "+numeros.indexOf(var));
 		else
 			System.out.printf("O elemento %d não foi encontrado! ",var);
 	}
