@@ -35,8 +35,7 @@ public class Exercicio_4 {
 		Iterator<Integer> iNumeros = numeros.iterator();
 		
 		while(iNumeros.hasNext())
-			if(iNumeros.next() == var);
-				System.out.printf("O Numero %d foi encontrado",var);
+			System.out.printf("O Numero %d foi encontrado",var);
 			
 	}
 

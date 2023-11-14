@@ -7,21 +7,35 @@ public class Exercicio_3 {
 	static Scanner leia = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		
-		int[][] matriz = new int [3][3];
-		
-		for(int l=0;l < matriz.length ;l++) {
-			for(int c=0;c < matriz.length ;c++) {
-				System.out.println("Matriz [" + l + "][" + c + "] = " );
-				matriz[l][c] = leia.nextInt();				
+
+		int[][] matriz = new int[3][3];
+		int somaP = 0, somaS = 0;
+		String diagonalP = "", diagonalS = "";
+
+		for (int indiceI = 0; indiceI < matriz.length; indiceI++) {
+			for (int indiceJ = 0; indiceJ < matriz[indiceI].length; indiceJ++) {
+				System.out.println("Digite o número da posição: (" + indiceI + "," + indiceJ + "): ");
+				matriz[indiceI][indiceJ] = leia.nextInt();
 			}
 		}
+
+		// A Diagonal Principal
+		for (int indice = 0; indice < matriz.length; indice++) {
+			diagonalP += matriz[indice][indice] + " ";
+			somaP += matriz[indice][indice];
+		}
+
+		// A Diagonal Secundária
+		for (int indice = 0; indice < matriz.length; indice++) {
+			diagonalS += matriz[indice][matriz.length - 1 - indice] + " ";
+			somaS += matriz[indice][matriz.length - 1 - indice];
+		}
+
+		System.out.println("Elementos da Diagonal Principal: " + diagonalP);
+		System.out.println("Soma dos Elementos da Diagonal Principal: " + somaP);
 		
-		System.out.println("Elementos da diagonal principal "+matriz[0][0]+" "+matriz[1][1]+" "+matriz[2][2]);
-		System.out.println("Elementos da diagonal secundaria "+matriz[0][2]+" "+matriz[1][1]+" "+matriz[2][0]);
-		System.out.println("Soma dos Elementos da Diagonal Principal: "+(matriz[0][0]+matriz[1][1]+matriz[2][2]));
-		System.out.println("Soma dos Elementos da Diagonal Secundária: "+(matriz[2][0]+matriz[1][1]+matriz[0][2]));
-		
+		System.out.println("Elementos da Diagonal Secundária: " + diagonalS);
+		System.out.println("Soma dos Elementos da Diagonal Secundária: " + somaS);
 	}
 
 }
