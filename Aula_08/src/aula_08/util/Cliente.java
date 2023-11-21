@@ -4,14 +4,14 @@ public class Cliente {
 
 	private String nome;
 	private int idade;
-	private String endereço;
+	private int cartao;
 	private int numeroTelefone ;
 	private String email;
 	
-	public Cliente(String nome, int idade, String endereço, int numeroTelefone, String email) {
+	public Cliente(String nome, int idade, int cartao, int numeroTelefone, String email) {
 		this.nome = nome;
 		this.idade = idade;
-		this.endereço = endereço;
+		this.cartao = cartao;
 		this.numeroTelefone = numeroTelefone;
 		this.email = email;
 	}
@@ -32,12 +32,12 @@ public class Cliente {
 		this.idade = idade;
 	}
 
-	public String getEndereço() {
-		return endereço;
+	public int getcartao() {
+		return cartao;
 	}
 
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
+	public void setcartão(int cartao) {
+		this.cartao = cartao;
 	}
 
 	public int getNumeroTelefone() {
@@ -55,15 +55,23 @@ public class Cliente {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
 		
 	public void visualizar() {
+		
+		String tipo = "";
+		
+			switch(this.cartao) {
+				case 1 -> tipo = "Tem cartão da loja";
+				case 2 -> tipo = "Não tem cartão da loja";		
+		}
 		
 		System.out.println("****************************");
 		System.out.println("Dados do Cliente");
 		System.out.println("****************************");
 		System.out.println("Nome do Cliente: " + this.nome);
 		System.out.println("Idade do Cliente: " + this.idade);
-		System.out.println("Endereço do Cliente: " + this.endereço);
+		System.out.println("Cartão : " + tipo);
 		System.out.println("Numero do Cliente: " + this.numeroTelefone);
 		System.out.println("Email do Cliente: " + this.email);
 		
